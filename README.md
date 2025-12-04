@@ -1,7 +1,7 @@
 # Echo
 
 <p align="center">
-  <img src="assets/logo.png" alt="Echo Logo" width="200"/>
+  <img src="assets/logo.png" alt="Echo Logo" width="400"/>
 </p>
 
 <p align="center">
