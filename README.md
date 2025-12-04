@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="License"/>
 </p>
 
-A lightweight command-line system information tool for macOS and iOS that displays hardware and software details.
+A lightweight command-line system information tool for iOS that displays hardware and software details.
 
 ## Features
 
