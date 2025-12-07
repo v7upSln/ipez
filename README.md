@@ -30,7 +30,7 @@ Add my repository and install via package manager. [my repo](https://v7upsln.git
 ### Usage
 
 ```bash
-decho
+ipez
 ```
 
 The tool will display comprehensive system information including device model, OS version, CPU, GPU, battery status, uptime, and storage details.
