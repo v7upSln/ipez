@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/platform-iOS-blue" alt="Platform"/>
+  <img src="https://img.shields.io/badge/platform-IOS-blue" alt="Platform"/>
   <img src="https://img.shields.io/badge/language-C-orange" alt="Language"/>
   <img src="https://img.shields.io/badge/version-1.0.0-green" alt="Version"/>
   <img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="License"/>
