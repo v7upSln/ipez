@@ -1,0 +1,50 @@
+#!/bin/bash
+
+export PATH="/var/jb/usr/local/bin:/var/jb/usr/bin:/var/jb/bin:/var/jb/usr/sbin:/var/jb/sbin:$PATH"
+
+run_cmd() {
+    local out
+    out=$(sh -c "$*" 2>/dev/null)
+    printf "%s" "$out"
+}
+
+ip_of() {
+    run_cmd "ifconfig $1 | awk '/inet / {print \\$2}' | head -n1"
+}
+
+default_gateway() {
+    run_cmd "route -n get default | awk '/gateway/ {print \\$2}'"
+}
+
+public_ip() {
+    run_cmd "curl -s https://api.ipify.org"
+}
+
+print_section() {
+    echo
+    echo "=============================="
+    echo " $1"
+    echo "=============================="
+}
+
+# OUTPUT
+print_section "Interfaces"
+
+echo "Wi-Fi IP        : $(ip_of en0)"
+echo "Active Ifaces   : $(ifconfig -l)"
+
+echo "Cellular IP     : [REMOVED]"
+
+echo
+print_section "Routing"
+
+echo "Default Gateway : $(default_gateway)"
+echo "DNS Servers     : [REMOVED]"
+
+echo
+print_section "External"
+
+echo "Public IP       : $(public_ip)"
+
+echo
+
